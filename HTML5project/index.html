@@ -7,25 +7,34 @@
         <link rel="stylesheet" href="node_modules/crosscover/dist/css/crosscover.min.css">
 
 
-        <title></title>
+        <title>Landing page</title>
         <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <!--JQuerry-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <!--crossover.js-->
         <script src="node_modules/crosscover/dist/js/crosscover.min.js"></script>
+
     </head>
     <body>
+        <nav class="navz">
+            <ul>
+                <a href="#">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#services">Services</a>
+                <a href="#contacts">Contacts</a>
+            </ul>
+        </nav>
         <div class="crosscover">
 
-    <!-- Overlay
+
     <div class="crosscover-overlay">
         <div class="crosscover-island">
-            <h1 class="crosscover-title">...</h1>
-            <h2 class="crosscover-description">...</h2>
+            <h1 class="crosscover-title">A Simple Landing page</h1>
+            <h2 class="crosscover-description">Natural Scenery</h2>
         </div>
     </div>
-    -->
+
 
   <div class="crosscover-list">
     <a class="crosscover-item" href="http://blivesta.com">
@@ -37,14 +46,28 @@
     <div class="crosscover-item">
             <img src="http://www.dream-wallpaper.com/free-wallpaper/nature-wallpaper/natural-scenery-16-wallpaper/1920x1200/free-wallpaper-20.jpg" alt="image03"/>
         </div>
+
   </div>
 
 </div>
+    <section id="portfolio">
+        <p>Great! you scrolled here</p>
+    </section>
+    <section id="services">
+        <p>Great! you scrolled here</p>
+    </section>
+    <section id="contacts">
+        <p>Great! you scrolled here</p>
+    </section>
 
+        <!--linked scripts here-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+          <script src="node_modules/navsync/dist/navsync.min.js"></script>
+        <!--crossover script-->
     <script>
         $(".crosscover").crosscover({
-    inClass: 'fade-in',
-    outClass: 'fade-out',
+    inClass: 'fadeInRight',
+    outClass: 'fadeOutRight',
     interval: 5000,
     startIndex: 0,
     autoPlay: true,
@@ -58,6 +81,16 @@
     prevInnerHtml: '<span class="crosscover-icon-prev"></span>',
     nextInnerHtml: '<span class="crosscover-icon-next"></span>'
 });
+
     </script>
+        <!--navsync-->
+ <!--      <script>
+     hljs.initHighlightingOnLoad();
+    $(function () {
+      $(window).load(function () {
+        $("nav").navSync();
+      });
+    });
+      </script>-->
     </body>
 </html>
