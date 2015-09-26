@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Animate.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
+        <!--crossover.css-->
+        <link rel="stylesheet" href="node_modules/crosscover/dist/css/crosscover.min.css">
+
+
+        <title></title>
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!--JQuerry-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        <!--crossover.js-->
+        <script src="node_modules/crosscover/dist/js/crosscover.min.js"></script>
+    </head>
+    <body>
+        <div class="crosscover">
+
+    <!-- Overlay
+    <div class="crosscover-overlay">
+        <div class="crosscover-island">
+            <h1 class="crosscover-title">...</h1>
+            <h2 class="crosscover-description">...</h2>
+        </div>
+    </div>
+    -->
+
+  <div class="crosscover-list">
+    <a class="crosscover-item" href="http://blivesta.com">
+            <img src="http://www.ambwallpapers.com/wp-content/uploads/2015/02/hd-scenery.jpg" alt="image01"/>
+        </a>
+    <div class="crosscover-item">
+            <img src="http://www.hdwallpapersonly.com/wp-content/uploads/2013/02/Scenery-Wallpapers-1.jpg" alt="image02"/>
+        </div>
+    <div class="crosscover-item">
+            <img src="http://www.dream-wallpaper.com/free-wallpaper/nature-wallpaper/natural-scenery-16-wallpaper/1920x1200/free-wallpaper-20.jpg" alt="image03"/>
+        </div>
+  </div>
+
+</div>
+
+    <script>
+        $(".crosscover").crosscover({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    interval: 5000,
+    startIndex: 0,
+    autoPlay: true,
+    dotsNav: true,
+    controller: false,
+    controllerClass: 'crosscover-controller',
+    prevClass: 'crosscover-prev',
+    nextClass: 'crosscover-next',
+    playerClass: 'crosscover-player',
+    playerInnerHtml: '<span class="crosscover-icon-player"></span>',
+    prevInnerHtml: '<span class="crosscover-icon-prev"></span>',
+    nextInnerHtml: '<span class="crosscover-icon-next"></span>'
+});
+    </script>
+    </body>
+</html>
