@@ -3,3 +3,4 @@ A site project using libraries
 Libraries used:
 * crossover
 * normalize
+* Skeleton Framework
